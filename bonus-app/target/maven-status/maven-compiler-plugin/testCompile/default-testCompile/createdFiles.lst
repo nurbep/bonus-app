@@ -1,0 +1,5 @@
+com/example/bonusapp/BonusAppApplicationTests.class
+com/example/bonusapp/controller/CustomerControllerTest.class
+com/example/bonusapp/service/CustomerServiceTest.class
+com/example/bonusapp/controller/TransactionControllerTest.class
+com/example/bonusapp/service/TransactionServiceTest.class
