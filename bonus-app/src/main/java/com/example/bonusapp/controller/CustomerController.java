@@ -28,4 +28,9 @@ public class CustomerController {
         log.info("Started createCustomer!");
         return new ResponseEntity<>(customerService.createOrSaveCustomer(customer), HttpStatus.CREATED);
     }
+
+    @GetMapping("/hi")
+    public ResponseEntity<String> hi() {
+        return new ResponseEntity<String>("I am Nuruzzaman", HttpStatus.OK);
+    }
 }
