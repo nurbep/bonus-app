@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/customers")
 @Slf4j
 public class CustomerController {
 
@@ -29,7 +28,7 @@ public class CustomerController {
         return new ResponseEntity<>(customerService.createOrSaveCustomer(customer), HttpStatus.CREATED);
     }
 
-    @GetMapping("/hi")
+    @GetMapping("/")
     public ResponseEntity<String> hi() {
         return new ResponseEntity<String>("I am Nuruzzaman", HttpStatus.OK);
     }
